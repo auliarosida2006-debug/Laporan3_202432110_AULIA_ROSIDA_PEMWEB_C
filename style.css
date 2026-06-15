@@ -1,0 +1,167 @@
+/* Aulia Rosida - 202432110 */
+
+:root{
+--primary:#109a93;
+--dark:#183f7a;
+--bg:#eef2f5;
+--white:#ffffff;
+--text:#556070;
+--shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+/* WATERMARK */
+body::after{
+content:"Aulia Rosida - 202432110";
+position:fixed;
+bottom:15px;
+right:15px;
+font-size:18px;
+font-weight:bold;
+color:rgba(0,0,0,0.08);
+pointer-events:none;
+z-index:9999;
+}
+
+/* NAVBAR */
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+background:var(--primary);
+height:42px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:140px;
+}
+
+.logo{
+color:white;
+font-size:12px;
+font-weight:600;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#dcebea;
+font-size:12px;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover{
+color:white;
+}
+
+.menu a.active{
+color:#0b1d44;
+font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+width:480px;
+margin:30px auto;
+}
+
+/* CARD UMUM */
+.card{
+background:white;
+border-radius:10px;
+padding:18px;
+margin-bottom:15px;
+box-shadow:var(--shadow);
+}
+
+.card h4{
+font-size:11px;
+letter-spacing:1px;
+color:#9aa4b2;
+margin-bottom:15px;
+}
+
+/* SKILL */
+.skill-list{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.skill{
+padding:7px 12px;
+border-radius:20px;
+font-size:11px;
+font-weight:600;
+}
+
+.html{
+background:#d6fff3;
+color:#267d6d;
+}
+
+.js{
+background:#d9def5;
+color:#354a8b;
+}
+
+.office{
+background:#ece1a8;
+color:#6a5b12;
+}
+
+.canva{
+background:#eef1f5;
+color:#6c7685;
+}
+
+.other{
+background:#edf1f7;
+color:#7d8795;
+}
+
+/* HARAPAN */
+.harapan{
+padding-left:18px;
+}
+
+.harapan li{
+margin-bottom:14px;
+font-size:13px;
+line-height:1.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:500px){
+
+.container{
+    width:95%;
+}
+
+.navbar{
+    gap:20px;
+    padding:0 10px;
+}
+
+.logo{
+    display:none;
+}
+
+}
